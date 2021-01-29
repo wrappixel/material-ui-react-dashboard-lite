@@ -1,6 +1,7 @@
 {
   "name": "material-ui-pro-react",
   "version": "1.0.0",
+  "homepage": "/demos/free-admin-templates/material-ui-dashboard-lite/",
   "author": "Wrappixel",
   "private": true,
   "dependencies": {

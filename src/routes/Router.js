@@ -16,25 +16,24 @@ const ChartPage = lazy(() => import("../views/Chart"));
 /*****Routes******/
 const ThemeRoutes = [
 	{
-	  path: 'app',
+	  path: '/demos/free-admin-templates/material-ui-dashboard-lite/',
 	  element: <FullLayout />,
 	  children: [
-		{ path: "home", exact: true, element:<Home/>},
-		{ path: "table", element:<DataTable/>}, 
-		{ path: "profile", element:<ProfilePage/>},
-		{ path: "chart", element:<ChartPage/>}, 
-		{ path: '*', element: <Navigate to="/404" /> }
+		{ path: '/demos/free-admin-templates/material-ui-dashboard-lite/', element: <Navigate to="/demos/free-admin-templates/material-ui-dashboard-lite/home" /> },
+		{ path: "/demos/free-admin-templates/material-ui-dashboard-lite/home", exact: true, element:<Home/>},
+		{ path: "/demos/free-admin-templates/material-ui-dashboard-lite/table", element:<DataTable/>}, 
+		{ path: "/demos/free-admin-templates/material-ui-dashboard-lite/profile", element:<ProfilePage/>},
+		{ path: "/demos/free-admin-templates/material-ui-dashboard-lite/chart", element:<ChartPage/>}, 
+		{ path: '*', element: <Navigate to="/demos/free-admin-templates/material-ui-dashboard-lite/auth/404" /> }
 	  ]
 	},
 	{
-	  path: '/',
+	  path: '/demos/free-admin-templates/material-ui-dashboard-lite/auth/',
 	  element: <BlankLayout />,
 	  children: [
-		  { path: "buttons", element:<Buttons/>},
 		  { path: "404", element: <Error /> },
 		  { path: "login", element: <Login /> },
-		  { path: '/', element: <Navigate to="/app/home" /> },
-		  { path: "*", element:  <Navigate to="/404" /> }
+		  { path: "*", element:  <Navigate to="/demos/free-admin-templates/material-ui-dashboard-lite/auth/404" /> }
 	  ]
 	}
   ];

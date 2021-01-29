@@ -36,7 +36,7 @@ const Login = () => {
   const navigate = useNavigate();
   const handleSubmit  = (event) =>{
     event.preventDefault();
-    return navigate('/app/home')
+    return navigate('/home')
   } 
   const handleInput  = (event) =>{
     setField(event.target.value)

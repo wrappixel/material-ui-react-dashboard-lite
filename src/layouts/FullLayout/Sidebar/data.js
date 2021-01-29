@@ -2,32 +2,32 @@ import { HomeTwoTone, LockOpenTwoTone, ErrorTwoTone, AccountCircleTwoTone, Ballo
 
 const Menuitems = [
     {
-      href: '/app/home',
+      href: '/home',
       icon: HomeTwoTone,
       title: 'Dashboard'
     },
     {
-      href: '/app/table',
+      href: '/table',
       icon: BallotTwoTone,
       title: 'Table'
     },
     {
-      href: '/app/profile',
+      href: '/profile',
       icon: AccountCircleTwoTone,
       title: 'Profile'
     },
     {
-      href: '/app/chart',
+      href: '/chart',
       icon: ErrorTwoTone,
       title: 'Chart'
     },
     {
-      href: '/404',
+      href: '/auth/404',
       icon: ErrorTwoTone,
       title: 'Error'
     },
     {
-      href: '/login',
+      href: '/auth/login',
       icon: LockOpenTwoTone,
       title: 'Login'
     }

@@ -61,7 +61,7 @@ const Error = () => {
             (404) The Page you are looking for is not available. kindly click on the back to home button
             </Box>
           </Typography>
-          <Link to="/" align="center"><Button color="secondary" variant="contained" disableElevation>Back to Home</Button></Link>
+          <Link to="/home" align="center"><Button color="secondary" variant="contained" disableElevation>Back to Home</Button></Link>
         </Container>
       </Box>
     </div>
