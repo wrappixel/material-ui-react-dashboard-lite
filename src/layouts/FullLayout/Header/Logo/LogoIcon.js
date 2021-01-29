@@ -1,10 +1,10 @@
 import React from 'react';
-
+import logoicn from '../../../../assets/images/logo-light-icon.png'
 const LogoIcon = (props) => {
     return ( 
         <img
             alt="Logo"
-            src="/static/logo-light-icon.png"
+            src={logoicn}
             {...props}
         />
     );

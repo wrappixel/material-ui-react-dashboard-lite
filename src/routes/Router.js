@@ -1,5 +1,10 @@
 import { lazy } from "react";
+
 import { Navigate } from 'react-router-dom';
+//import {History} from '../History'
+//import { createBrowserHistory } from "history";
+const baseUrl = '/';
+
 /****Layouts*****/
 const FullLayout = lazy(() => import("../layouts/FullLayout/FullLayout.js"));
 const BlankLayout = lazy(() => import("../layouts/BlankLayout/BlankLayout.js"));
@@ -7,7 +12,7 @@ const BlankLayout = lazy(() => import("../layouts/BlankLayout/BlankLayout.js"));
 
 /*****Pages******/
 const Home = lazy(() => import("../views/Home"));
-const Buttons = lazy(() => import("../views/Buttons"));
+
 const Error = lazy(() => import("../views/error/error"));
 const Login = lazy(() => import("../views/Login"));
 const DataTable = lazy(() => import("../views/Table"));
@@ -16,24 +21,23 @@ const ChartPage = lazy(() => import("../views/Chart"));
 /*****Routes******/
 const ThemeRoutes = [
 	{
-	  path: '/',
+	  path: baseUrl,
 	  element: <FullLayout />,
 	  children: [
-		{ path: '/', element: <Navigate to="/home" /> },
+		{ path: baseUrl, element: <Navigate to={`${baseUrl}home`} /> },
 		{ path: "home", exact: true, element:<Home/>},
 		{ path: "table", element:<DataTable/>}, 
 		{ path: "profile", element:<ProfilePage/>},
 		{ path: "chart", element:<ChartPage/>}, 
-		{ path: '*', element: <Navigate to="/auth/404" /> }
+		{ path: '*', element: <Navigate to={`${baseUrl}auth/404`}/> }
 	  ]
 	},
 	{
-	  path: '/auth',
+	  path: `${baseUrl}auth`,
 	  element: <BlankLayout />,
 	  children: [
 		  { path: "404", element: <Error /> },
 		  { path: "login", element: <Login /> },
-		  { path: "*", element:  <Navigate to="/auth/404" /> }
 	  ]
 	}
   ];

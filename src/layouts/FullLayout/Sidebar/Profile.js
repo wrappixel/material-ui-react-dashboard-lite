@@ -2,9 +2,11 @@ import React, {useState} from 'react';
 import { NavLink } from 'react-router-dom';
 import { Avatar, Box, Typography,  makeStyles, Menu, MenuItem  } from '@material-ui/core';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import uimage from '../../../assets/images/users/user_1.png';
+import bgprofile from '../../../assets/images/backgrounds/user-info.png';
 
 const userProfile = {
-    avatar: '/static/images/users/user_1.png',
+    avatar: uimage,
     jobTitle: 'Senior Developer',
     name: 'Jonathan Deo',
     href:"/"
@@ -17,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
         height: theme.spacing(6),
     },
     profileBg: {
-        backgroundImage: `url('/static/images/backgrounds/user-info.png')`,
+        backgroundImage: `url(${bgprofile})`,
         backgroundPosition: 'center', 
         backgroundSize: 'cover', 
         backgroundRepeat: 'no-repeat' 

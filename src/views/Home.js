@@ -10,7 +10,11 @@ import Visitors from  '../Components/DashboardComponents/Visitors'
 import InfoCards from '../Components/DashboardComponents/InfoCard';
 import Contacts from '../Components/DashboardComponents/Contact';
 import Table from './Table'
-import BlogCard from '../Components/DashboardComponents/BlogCards'
+import BlogCard from '../Components/DashboardComponents/BlogCards';
+import us1 from '../assets/images/backgrounds/u1.jpg'
+import us2 from '../assets/images/backgrounds/u2.jpg'
+import us3 from '../assets/images/backgrounds/u3.jpg'
+import us4 from '../assets/images/backgrounds/u4.jpg'
 const Home = () => {
     return (
         <Grid container spacing={3}>
@@ -55,16 +59,16 @@ const Home = () => {
             </Grid>
 
             <Grid item lg={3} md={12} xs={12}>
-                <BlogCard image="/static/images/backgrounds/u1.jpg" title="So Exited to watch"/>
+                <BlogCard image={us1} title="So Exited to watch"/>
             </Grid>
             <Grid item lg={3} md={12} xs={12}>
-                <BlogCard image="/static/images/backgrounds/u2.jpg" title="So Exited to watch"/>
+                <BlogCard image={us2} title="So Exited to watch"/>
             </Grid>
             <Grid item lg={3} md={12} xs={12}>
-                <BlogCard image="/static/images/backgrounds/u3.jpg" title="So Exited to watch"/>
+                <BlogCard image={us3} title="So Exited to watch"/>
             </Grid>
             <Grid item lg={3} md={12} xs={12}>
-                <BlogCard image="/static/images/backgrounds/u4.jpg" title="So Exited to watch"/>
+                <BlogCard image={us4} title="So Exited to watch"/>
             </Grid>
         </Grid>
         

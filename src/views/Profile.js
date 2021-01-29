@@ -12,7 +12,7 @@ import {
     Button,
     TextField
   } from '@material-ui/core';
-
+import profileimg from '../assets/images/users/user_1.png'
 const useStyles = makeStyles({
     avatar: {
         height:100,
@@ -45,7 +45,7 @@ const useStyles = makeStyles({
                 <Card elevation={1} >
                     <CardContent>
                         <Box textAlign="center">
-                            <Avatar alt="Travis Howard" className={classes.avatar} src="/static/images/users/user_1.png" />
+                            <Avatar alt="Travis Howard" className={classes.avatar} src={profileimg} />
                             <Typography variant="h4">Jonathan Deo</Typography>
                             <Typography variant="body2">Web Designer</Typography>
                         </Box>
