@@ -7,7 +7,7 @@ import Spinner from "./views/Spinner/Spinner";
 ReactDOM.render(
   
   	<Suspense fallback={<Spinner />}>
-    	<BrowserRouter basename="/demos/free-admin-templates/material-ui-dashboard-lite/">
+    	<BrowserRouter>
   	  	  <App />
   	  </BrowserRouter>
     </Suspense>
